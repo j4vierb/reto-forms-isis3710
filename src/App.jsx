@@ -17,16 +17,16 @@ function App() {
       setErrEmail(false);
       return;
     }
-
     setErrEmail(true);
 
-    setForm({
+    const newForm = {
       email: email,
       password: password,
       class: option
-    });
+    };
+    setForm(newForm);
 
-    console.log(form)
+    console.log(newForm);
   }
 
   const handleChangePassword = (event) => {
